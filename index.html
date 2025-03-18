@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Join our waitlist!</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Communiti" />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,47 +21,53 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
+  
   <body>
-    <div class="container">
-      <div class="banner-wrapper">
-        <div class="banner-icon">
-          <img src="assets/up.png" alt="Up arrow" />
-        </div>
-        <div class="top-banner">
-          <img src="assets/flame.png" alt="Flame" class="icon" />
-          Hurry up! Join our waitlist!
-        </div>
+    <header class="header">
+      <div class="logo">
+        <a href="/">
+          <img src="assets/logo.png" alt="Communiti Logo" />
+        </a>
       </div>
+    </header>
 
-      <h1>
-        Your College,<br />
-        Your <em>Community</em>.
-      </h1>
+    <div class="main-content">
+      <div class="container">
+        <h1>
+          Your College,<br />
+          Your <em>Community</em>.
+        </h1>
 
-      <p class="subtitle">
-        We are in the business of making your college life more meaningful.<br />
-        If you identify yourself as a college student or a club member then<br />
-        you need to sign up to see it for yourself!
-      </p>
+        <p class="subtitle">
+          We are in the business of making your college life more meaningful.<br />
+          If you identify yourself as a college student or a club member then<br />
+          you need to sign up to see it for yourself!
+        </p>
 
-      <form id="waitlistForm" class="waitlist-form">
-        <div class="input-group">
-          <input
-            type="email"
-            id="email"
-            placeholder="Your email address"
-            required
-          />
-          <button type="submit">
-            Join waitlist <span class="arrow">→</span>
-          </button>
-        </div>
-        <div id="message" class="message"></div>
-      </form>
+        <form id="waitlistForm" class="waitlist-form">
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Your email address"
+              required
+            />
+            <button type="submit">
+              Join waitlist <span class="arrow">→</span>
+            </button>
+          </div>
+          <div id="message" class="message"></div>
+        </form>
+      </div>
+      
+      <div class="app-preview">
+        <img src="assets/app-mockup.png" alt="App Mockup Preview" />
+      </div>
     </div>
 
-    <footer>© 2025 Communiti</footer>
+    <footer>© <span id="currentYear"></span> Communiti</footer>
 
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
     <script src="script.js"></script>
   </body>
 </html>
