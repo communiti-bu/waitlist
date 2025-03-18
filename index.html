@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join our waitlist!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner-wrapper">
+        <div class="banner-icon">
+          <img src="assets/up.png" alt="Up arrow" />
+        </div>
+        <div class="top-banner">
+          <img src="assets/flame.png" alt="Flame" class="icon" />
+          Hurry up! Join our waitlist!
+        </div>
+      </div>
+
+      <h1>
+        Your College,<br />
+        Your <em>Community</em>.
+      </h1>
+
+      <p class="subtitle">
+        We are in the business of making your college life more meaningful.<br />
+        If you identify yourself as a college student or a club member then<br />
+        you need to sign up to see it for yourself!
+      </p>
+
+      <form id="waitlistForm" class="waitlist-form">
+        <div class="input-group">
+          <input
+            type="email"
+            id="email"
+            placeholder="Your email address"
+            required
+          />
+          <button type="submit">
+            Join waitlist <span class="arrow">→</span>
+          </button>
+        </div>
+        <div id="message" class="message"></div>
+      </form>
+    </div>
+
+    <footer>© 2025 Communiti</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
