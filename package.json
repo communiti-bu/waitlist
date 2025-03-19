@@ -4,7 +4,8 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production && npm run copy-files",
+    "copy-files": "cp index.html styles.css -r assets dist/"
   },
   "repository": {
     "type": "git",
