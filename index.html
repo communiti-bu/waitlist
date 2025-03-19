@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Join our waitlist!</title>
     
-    <!-- Favicons -->
     <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="assets/favicons/favicon.svg" />
     <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
@@ -23,6 +22,10 @@
   </head>
   
   <body>
+    <div id="loadingScreen" class="loading-screen">
+      <div class="loader"></div>
+    </div>
+
     <header class="header">
       <div class="logo">
         <a href="/">
@@ -35,12 +38,12 @@
       <div class="container">
         <h1>
           Your College,<br />
-          Your <em>Community</em>.
+          Your <em id="dynamic-text">Community</em>.
         </h1>
 
         <p class="subtitle">
-          Discover clubs, events, and student communities at Boston University through an<br />
-          intuitive platform designed just for you. Get personalized recommendations,<br />
+          Discover clubs, events, and student communities at Boston University through an
+          intuitive platform designed just for you. Get personalized recommendations,
           connect with club leaders, and never miss an opportunity to engage on campus.
         </p>
 
