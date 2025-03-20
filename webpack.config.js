@@ -18,5 +18,17 @@ module.exports = {
   mode: 'development',
   plugins: [
     new webpack.DefinePlugin(envKeys)
-  ]
+  ],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, '/'),
+    },
+    compress: true,
+    port: 3000,
+    allowedHosts: 'all',
+    host: '0.0.0.0',
+    client: {
+      webSocketURL: 'auto://'
+    }
+  }
 };

@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production && npm run copy-files",
-    "copy-files": "cp index.html styles.css -r assets dist/"
+    "copy-files": "cp index.html styles.css -r assets dist/",
+    "dev": "webpack serve --mode development",
+    "start": "webpack serve --mode development --open"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,10 @@
   "devDependencies": {
     "dotenv": "^16.4.7",
     "webpack": "^5.98.0",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
   }
 }
