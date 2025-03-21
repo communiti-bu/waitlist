@@ -32,6 +32,8 @@ body {
   padding: 1.5rem 2rem;
   z-index: 100;
   background: #ffffff;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .logo {
@@ -179,14 +181,13 @@ h1 em.finished::after {
 
 input[type="email"] {
   flex: 1;
-  padding: 1.3rem 1.7rem;
-  border: 1px solid #e0e0e0;
+  padding: 1.2rem 1.8rem;
+  font-size: 1.1rem;
+  border: 1px solid rgba(26, 26, 26, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
-  font-family: "Inter", sans-serif;
-  font-size: 1.2rem;
-  background: rgba(0, 0, 0, 0.03);
-  color: #1a1a1a;
-  transition: border-color 0.2s, background 0.2s;
+  transition: all 0.2s ease;
+  outline: none;
 }
 
 input[type="email"]::placeholder {
@@ -201,23 +202,23 @@ input[type="email"]:focus {
 }
 
 button[type="submit"] {
-  padding: 1.3rem 2.2rem;
-  border: none;
-  border-radius: 10px;
-  background: #5be28f;
+  background-color: #5BE28F;
   color: #1a1a1a;
-  font-family: "Inter", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
+  border: none;
+  padding: 1.2rem 2rem;
+  font-size: 1.1rem;
+  text-transform: none;
   cursor: pointer;
+  transition: all 0.3s ease;
   white-space: nowrap;
-  transition: all 0.2s ease;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(91, 226, 143, 0.2);
 }
 
 button[type="submit"]:hover {
-  background: #2da55f;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(45, 165, 95, 0.3);
+  background-color: #4dcc7d;
+  transform: translateY(-1px);
 }
 
 button[type="submit"]:active {
@@ -288,6 +289,14 @@ footer {
 }
 
 @media (max-width: 860px) {
+  body {
+    overflow-y: auto;
+  }
+  
+  .header {
+    justify-content: center;
+  }
+  
   .main-content {
     flex-direction: column;
     gap: min(4rem, 8vh);
@@ -329,10 +338,17 @@ footer {
 @media (max-width: 640px) {
   .header {
     padding: 1rem min(1.2rem, 4vw);
+    justify-content: center;
   }
-
+  
+  body {
+    height: auto;
+    overflow-y: auto;
+  }
+  
   .main-content {
-    padding: 2rem min(1.5rem, 4vw) 2rem;
+    padding: 1rem min(1.5rem, 4vw) 2rem;
+    min-height: auto;
   }
 
   .container,
@@ -349,6 +365,7 @@ footer {
   button[type="submit"] {
     padding: 1.1rem 1.5rem;
     font-size: 1.1rem;
+    border-radius: 16px;
   }
 
   .app-preview img {
@@ -362,6 +379,13 @@ footer {
 
   .waitlist-form {
     width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  button[type="submit"] {
+    background-color: #5BE28F;
+    color: #1a1a1a;
   }
 }
 
